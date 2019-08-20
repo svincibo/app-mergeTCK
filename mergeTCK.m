@@ -13,7 +13,6 @@ if ~isdeployed
     
     addpath(genpath('/N/u/brlife/git/jsonlab'));
     addpath(genpath('/N/u/hayashis/git/vistasoft'))
-    addpath(genpath('/gpfs/home/s/v/svincibo/Carbonate/matlab/vistasoft/external/mrtrix/external/'))
     
 end
 
