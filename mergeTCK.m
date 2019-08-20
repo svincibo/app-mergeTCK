@@ -12,6 +12,8 @@ clear all; close all; clc;
 if ~isdeployed
     
     addpath(genpath('/N/u/brlife/git/jsonlab'));
+%     addpath(genpath('/N/u/brlife/git/vistasoft'));
+    addpath(genpath('/N/u/hayashis/git/vistasoft'))
     
 end
 
@@ -66,8 +68,14 @@ tck_temp.total_count = length(tck_temp.data);
 % Update user -- NOTE: Update to get subject ID from config file.
 disp('Writing merged TCK file for this subject...')
         
+if ~exist('output')
+    
+    mkdir output
+
+end
+
 % Write out merged tck file.
-write_mrtrix_tracks(tck_temp, 'sub-103_merged.tck')
+write_mrtrix_tracks(tck_temp, 'output/track.tck')
 
 % Update user -- NOTE: Update to get subject ID from config file.
 disp(['Finished writing merged TCK file for this subject: ' num2str(tck_temp.total_count) ' total streamlines.'])
