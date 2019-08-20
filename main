@@ -5,7 +5,6 @@
 #PBS -l vmem=30gb
 
 module load matlab/2019a
-module load mrtrix
 
 matlab -nosplash -nodisplay -r mergeTCK
 
