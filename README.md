@@ -1,2 +1,5 @@
 # app-mergeTCK
-Merge multiple TCK files into one TCK file.
+Merge multiple TCK files from a subject into one TCK file. BIDS format is assumed.
+Dependencies: mrtrix3
+
+Created by Sophia Vinci-Booher, 08/20/2019
