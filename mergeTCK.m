@@ -12,8 +12,8 @@ clear all; close all; clc;
 if ~isdeployed
     
     addpath(genpath('/N/u/brlife/git/jsonlab'));
-%     addpath(genpath('/N/u/brlife/git/vistasoft'));
     addpath(genpath('/N/u/hayashis/git/vistasoft'))
+    addpath(genpath('/gpfs/home/s/v/svincibo/Carbonate/matlab/vistasoft/external/mrtrix/external/'))
     
 end
 
@@ -26,7 +26,7 @@ N_tcks = size(config(1).tcks, 2);
 % Address one TCK file at a time, for now.
 for i_tcks = 1:N_tcks
     
-    % Read in data for this subject and this tck -- NOTE: Change this to fgRead.
+    % Read in data for this subject and this tck. -- NOTE: Consider dtiImportFibersMatrix.    
     tck_temp = read_mrtrix_tracks(config(1).tcks{i_tcks});
     
     % Merge.
