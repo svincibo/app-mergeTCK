@@ -45,7 +45,10 @@ If you don't have your own input file, you can download sample datasets from Bra
 npm install -g brainlife
 bl login
 mkdir input
-bl dataset download 5c0c5d8df6f108004b490ec8 && mv 5c0c5e17f6f108004b490ecb && mv 5c0c5faff6f108004b490ed8 input/track
+bl dataset download 5c0c5d8df6f108004b490ec8 && mv 5c0c5d8df6f108004b490ec8 input/track
+bl dataset download 5c0c5e17f6f108004b490ecb && mv 5c0c5e17f6f108004b490ecb input/track
+bl dataset download 5c0c5faff6f108004b490ed8 && mv 5c0c5faff6f108004b490ed8 input/track
+
 ```
 
 ## Output
