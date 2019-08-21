@@ -2,7 +2,7 @@
 [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.219-blue.svg)](https://doi.org/10.25663/bl.app.219)
 
 # app-mergeTCK
-Merge multiple TCK files from a subject into one TCK file. BIDS format is assumed.
+Merge multiple TCK files into one TCK file.
 
 ### Authors
 - Sophia Vinci-Booher (svincibo@indiana.edu)
@@ -14,8 +14,7 @@ Merge multiple TCK files from a subject into one TCK file. BIDS format is assume
 ### Funding 
 [![NSF-BCS-1734853](https://img.shields.io/badge/NSF_BCS-1734853-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1734853)
 [![NSF-BCS-1636893](https://img.shields.io/badge/NSF_BCS-1636893-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1636893)
-
-## Running the App 
+[![NSF-BCS-1636893](https://img.shields.io/badge/NSF_BCS-1636893-blue.svg)](https://www.nichd.nih.gov/grants-contracts/training-careers/extramural/institutional)
 
 ### On Brainlife.io
 
@@ -28,7 +27,7 @@ You can submit this App online at [https://doi.org/10.25663/bl.app.219](https://
 
 ```json
 {
-        "tcks": "./track.tck"
+        "tcks": ["./track1.tck", "./track2.tck", "./track3.tck"]
 }
 ```
 
@@ -46,30 +45,23 @@ If you don't have your own input file, you can download sample datasets from Bra
 npm install -g brainlife
 bl login
 mkdir input
-bl dataset download  XXXX && mv  XXXX input/track
+bl dataset download 5c0c5d8df6f108004b490ec8 && mv 5c0c5e17f6f108004b490ecb && mv 5c0c5faff6f108004b490ed8 input/track
 ```
 
 ## Output
 
-All output files will be generated under the current working directory (pwd). The main output of this App is a file called `output.mat`. This file contains following object.
+All output files will be generated under the current working directory (pwd). The main output of this App is a file called `track.tck`. This file contains following object.
 
 ```
 tck = 
 
-    name: 'temp'
-    type: 'faseval'
+    name: 'track'
 
 ```
 
-`output_fg.pdb` contains all fasicles with >0 weights withtin fg object (fibers)
-
-#### Product.json
-
-In progress.
-
 ### Dependencies
 
-This App only requires [singularity](https://www.sylabs.io/singularity/) to run. If you don't have singularity, you will need to install following dependencies.  
+This App requires [singularity](https://www.sylabs.io/singularity/) to run. If you don't have singularity, you will need to install following dependencies.  
 
   - Matlab: https://www.mathworks.com/products/matlab.html
   - jsonlab: https://www.mathworks.com/matlabcentral/fileexchange/33381-jsonlab-a-toolbox-to-encode-decode-json-files
