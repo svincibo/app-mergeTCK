@@ -4,8 +4,10 @@
 # app-mergeTCK
 Merge multiple TCK files into one TCK file.
 
-### Authors
+### Author
 - Sophia Vinci-Booher (svincibo@indiana.edu)
+
+### Contributor
 - Soichi Hayashi (hayashis@iu.edu)
 
 ### Project director
