@@ -4,8 +4,10 @@
 # app-mergeTCK
 Merge multiple TCK files into one TCK file.
 
-### Authors
+### Author
 - Sophia Vinci-Booher (svincibo@indiana.edu)
+
+### Contributor
 - Soichi Hayashi (hayashis@iu.edu)
 
 ### Project director
@@ -14,7 +16,7 @@ Merge multiple TCK files into one TCK file.
 ### Funding 
 [![NSF-BCS-1734853](https://img.shields.io/badge/NSF_BCS-1734853-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1734853)
 [![NSF-BCS-1636893](https://img.shields.io/badge/NSF_BCS-1636893-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1636893)
-[![NSF-BCS-1636893](https://img.shields.io/badge/NSF_BCS-1636893-blue.svg)](https://www.nichd.nih.gov/grants-contracts/training-careers/extramural/institutional)
+[![NIH-T32-HD007475](https://img.shields.io/badge/NIH_T32-HD007475-blue.svg)](https://www.nichd.nih.gov/grants-contracts/training-careers/extramural/institutional)
 
 ### On Brainlife.io
 
@@ -45,7 +47,10 @@ If you don't have your own input file, you can download sample datasets from Bra
 npm install -g brainlife
 bl login
 mkdir input
-bl dataset download 5c0c5d8df6f108004b490ec8 && mv 5c0c5e17f6f108004b490ecb && mv 5c0c5faff6f108004b490ed8 input/track
+bl dataset download 5c0c5d8df6f108004b490ec8 && mv 5c0c5d8df6f108004b490ec8 input/track
+bl dataset download 5c0c5e17f6f108004b490ecb && mv 5c0c5e17f6f108004b490ecb input/track
+bl dataset download 5c0c5faff6f108004b490ed8 && mv 5c0c5faff6f108004b490ed8 input/track
+
 ```
 
 ## Output
