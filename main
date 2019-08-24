@@ -9,3 +9,4 @@ module load mrtrix
 
 matlab -nosplash -nodisplay -r mergeTCK
 
+[ ! -s track.tck ] && exit 1
