@@ -8,6 +8,4 @@ module load matlab/2019a
 module load mrtrix
 
 matlab -nosplash -nodisplay -r mergeTCK
-
-# Check for output.
-[ ! -s ./output/track.tck ] && exit 1
+[ ! -f ./output/track.tck ] && exit 1
