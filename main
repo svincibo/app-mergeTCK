@@ -8,4 +8,9 @@ module load matlab/2019a
 module load mrtrix
 
 matlab -nosplash -nodisplay -r mergeTCK
-[ ! -f ./output/track.tck ] && exit 1
+if [ ! -f ./output/track.tck ]; then
+       echo "mergeTCK didn't produce track.tck"
+       exit 1
+fi
+
+echo "all done"
