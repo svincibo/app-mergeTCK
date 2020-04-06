@@ -1,4 +1,6 @@
 testdata/
 config.json
 sub103-merged.tck
-
+output/
+*~
+config_mergeTCK.json
