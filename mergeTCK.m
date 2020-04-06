@@ -140,3 +140,5 @@ write_mrtrix_tracks(tck_temp, 'output/track.tck')
 % Update user -- NOTE: Update to get subject ID from config file.
 disp(['Finished writing merged TCK file for this subject: ' num2str(tck_temp.total_count) ' total streamlines.'])
 
+exit
+
