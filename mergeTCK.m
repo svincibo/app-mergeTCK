@@ -1,4 +1,4 @@
-% function [] = mergeTCK()
+function [] = mergeTCK()
 
 % This script will read in all available TCK files for a subject and merge
 % them into one TCK file. BIDS format is assumed.
