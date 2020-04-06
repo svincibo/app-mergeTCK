@@ -109,7 +109,7 @@ elseif isfield(config, 'track1') % then this is merge2TCKs
     end
     
     % Update user -- NOTE: Update to get subject ID from config file.
-    disp(['... merging ' num2str(i_tcks) ' of ' num2str(N_tcks) ' TCKs.'])
+    disp(['... merging 2 of ' num2str(N_tcks) ' TCKs.'])
     
 end % if isfield
 
