@@ -22,7 +22,7 @@ end
 config = loadjson('config.json');
 
 % Discern between mergeTCK and merge2TCKs.
-% Note: This would be better as a switch-case, if I could identify a good switch in the config.jscon file.
+% Note: This would be better as a switch-case, if I could identify a good switch in the config.json file.
 if isfield(config, 'tcks') % then this is merge2TCKs.
     
     % Get number of TCKs to be merged.
