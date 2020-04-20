@@ -4,8 +4,7 @@
 #PBS -l walltime=00:20:00
 #PBS -l vmem=30gb
 
-module load matlab/2019a
-module load mrtrix
+singularity exec -e docker://brainlife/mcr:r2019a ./compiled/mergeTCK
 
 matlab -nosplash -nodisplay -r mergeTCK
 if [ ! -f ./output/track.tck ]; then
