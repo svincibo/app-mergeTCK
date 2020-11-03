@@ -3,7 +3,7 @@ mergeTCK: [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.
 merge2TCKs: [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.304-blue.svg)](https://doi.org/10.25663/brainlife.app.304)
 
 # app-mergeTCK
-Merge multiple TCK files into one TCK file.
+This app takes multiple TCK files and merges them into one TCK file. The merge2TCKs app will merge two tcks. The mergeTCKs app will merge multiple tcks (i.e., more than two). The output is a single TCK file that contains all of the streamlines that were present in the two (or multiple) input tck files. Redundant streamlines are not removed.
 
 ### Author
 - Sophia Vinci-Booher (svincibo@indiana.edu)
