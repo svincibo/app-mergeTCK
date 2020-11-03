@@ -1,5 +1,5 @@
 [![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
-[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.219-blue.svg)](https://doi.org/10.25663/bl.app.219)
+[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.219-blue.svg)](https://doi.org/10.25663/brainlife.app.219)
 
 # app-mergeTCK
 Merge multiple TCK files into one TCK file.
@@ -20,7 +20,7 @@ Merge multiple TCK files into one TCK file.
 
 ### On Brainlife.io
 
-You can submit this App online at [https://doi.org/10.25663/bl.app.219](https://doi.org/10.25663/bl.app.219) via the "Execute" tab.
+You can submit this App online at [https://doi.org/10.25663/brainlife.app.219](https://doi.org/10.25663/bl.app.219) via the "Execute" tab.
 
 ### Running Locally (on your machine)
 
