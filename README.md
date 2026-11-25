@@ -3,6 +3,38 @@ mergeTCK: [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.
 merge2TCKs: [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.304-blue.svg)](https://doi.org/10.25663/brainlife.app.304)
 
 # app-mergeTCK
+
+<!-- brainlife-app:begin (generated from the App manifest; edit the manifest, not this block) -->
+
+> **Merges several MRtrix .tck tractograms into a single .tck tractogram with a compiled MATLAB script.**
+
+Reads every TCK file given as input, concatenates their streamlines, updates the streamline counts and writes one merged track.tck. Use it to combine tractograms produced separately (for example per tract or per tracking run) for one subject. All inputs should be in the same space; use merge2TCKs when a Pipeline can pass only two single tractograms.
+
+| | |
+|---|---|
+| 📥 **Inputs** | `neuro/track/tck` |
+| 📤 **Outputs** | `neuro/track/tck` |
+| 🐳 **Container** | `brainlife/mcr:r2019a` |
+| ⚙️ **Resources** | 1 CPUs · 30 GB memory · 0.33 h walltime |
+| 🔗 **Run it** | [doi.org/10.25663/brainlife.app.219](https://doi.org/10.25663/brainlife.app.219) |
+
+#### 📥 Inputs
+
+| Input | Datatype | Required | Description |
+|---|---|---|---|
+| `track` | `neuro/track/tck` | yes | Two or more MRtrix .tck tractograms of the same subject to merge. Tractograms should be in the same space. |
+
+#### 📤 Outputs
+
+| Output | Datatype | Description |
+|---|---|---|
+| `output` | `neuro/track/tck` | A single track.tck containing all streamlines from the input tractograms. |
+
+📚 **References used by this App:**
+- Avesani P, McPherson B, Hayashi S, et al. The open diffusion data derivatives, brain data upcycling via integrated publishing of derivatives and reproducible open cloud services. Sci Data 6, 69 (2019). [doi:10.1038/s41597-019-0073-y](https://doi.org/10.1038/s41597-019-0073-y)
+
+<!-- brainlife-app:end -->
+
 This app takes multiple TCK files and merges them into one TCK file. The merge2TCKs app will merge two tcks. The mergeTCKs app will merge multiple tcks (i.e., more than two). The output is a single TCK file that contains all of the streamlines that were present in the two (or multiple) input tck files. Redundant streamlines are not removed.
 
 ### Author
